@@ -5,112 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">Calculator</h1>
+    <!-- <h1 id="title">Calculator</h1> -->
     
     <section class="end">
         <br><br>
     <input type="text" name="display" id="display">
 
-    <div>
+    <div id="btn_clm1">
     <input type="button" value="1" onclick="display.value +='1' ">
     <input type="button" value="2" onclick="display.value +='2' ">
     <input type="button" value="3" onclick="display.value +='3' ">
+    </div>
 
     <br><br>
 
+    <div id="btn_clm2">
     <input type="button" value="4" onclick="display.value +='4' ">
     <input type="button" value="5" onclick="display.value +='5' ">
     <input type="button" value="6" onclick="display.value +='6' ">
-    
+    </div>
+
     <br><br>
 
+    <div id="btn_clm2">
     <input type="button" value="7" onclick="display.value +='7' ">
     <input type="button" value="8" onclick="display.value +='8' ">
     <input type="button" value="9" onclick="display.value +='9' ">
-    
+    </div>
+
     <br><br>
 
+    <div id="btn_clm2">
     <input type="button" value="0" onclick="display.value +='0' ">
-    <input type="button" value="+" onclick="display.value +='+' ">
-    <input type="button" value="-" onclick="display.value +='-' ">
+    <input id="color" type="button" value="+" onclick="display.value +='+' ">
+    <input id="color" type="button" value="-" onclick="display.value +='-' ">
+    </div>
 
     <br><br>
 
-    <input type="button" value="*" onclick="display.value +='*' ">
-    <input type="button" value="/" onclick="display.value +='/' ">
-    <input type="button" value="=" onclick="display.value = eval(display.value) ">
-    
+    <div id="btn_clm2">
+    <input id="color" type="button" value="*" onclick="display.value +='*' ">
+    <input id="color" type="button" value="/" onclick="display.value +='/' ">
+    <input id="color" type="button" value="=" onclick="display.value = eval(display.value) ">
+    </div>
+
     <br><br>
 
+<div>
     <input id="clear" type="button" value="Clear all" onclick="display.value ='' ">
 </div>
 <br> <br>
 </section>
-    
-<!-- CSS code -->
-    <style>
-        html{
-            margin: 0px;
-            padding: 0px;
-            /* background-color: rgb(146, 20, 92); */
-            background-color: black;
-            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeP4Wb3lRFCY9kMm4gcb-M7GSFg8sFVeEk7A&usqp=CAU);
-            background-size: cover;
-            background-position: center; */
-            
-        }
-        #title{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            font-family: monospace;
-            font-size: 50px;
-            /* color: rgb(94, 13, 59); */
-            color: rgb(233, 137, 21);
-            text-shadow: 2px 3px brown;
-        }
-        #display{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;  
-            height: 50px;
-            width: 250px;
-            font-size: 30px;
-            font-weight: bolder;
-            background-color: rgb(196, 192, 239);
-        }
-        div{
-            /* border: 2px solid blue; */
-            height: 500px;
-            width: 500px;
-            margin: auto;
-            padding-left: 35px;
-        }
-        input{
-            height: 60px;
-            width: 60px;
-            font-weight: bolder;
-            font-size: 30px;
-            margin: 0px 6px 9px;
-            background-color:rgb(153, 146, 223);
-        }
-        input:hover{
-            color: azure;
-            cursor: pointer;
-        }
-        #clear{
-            width: 220px;  
-        }
-        .end{
-            border: 4px solid rgb(100, 18, 55);
-            box-shadow: 10px 10px rgb(230, 104, 104);
-            margin-left: 600px;
-            margin-right: 600px;
-        }
-
-    </style>
-
 </body>
 </html>
